@@ -1,0 +1,155 @@
+
+@font-face {
+    font-family: 'alien_moonregular';
+    src: url('./fonts/alien_moon-webfont.woff2') format('woff2'),
+         url('./fonts/alien_moon-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'alien_warsitalic';
+    src: url('./fonts/alien_wars_italic-webfont.woff2') format('woff2'),
+         url('./fonts/alien_wars_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'alien_warsregular';
+    src: url('./fonts/alien_wars-webfont.woff2') format('woff2'),
+         url('./fonts/alien_wars-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'alien_moonitalic';
+    src: url('./fonts/alien_moon_italic-webfont.woff2') format('woff2'),
+         url('./fonts/alien_moon_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root{
+    font-size: 16px;
+}
+
+
+
+
+.mainContainer{
+    display: grid;
+    grid-template-columns: max(300px, 20vw) 3fr;
+    
+    height: 100%;
+    column-gap: 20px;
+    border: solid red 1px;
+    background-color: black;
+}
+
+
+.sideBar{
+    grid-column: 1;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-rows: 3fr repeat(5, 1fr) 2fr repeat(3, 1fr) 10fr;
+    grid-template-columns: 40px 100px;
+    justify-items: center;
+    row-gap: 20px;
+    column-gap: 10px;
+    align-items: center;
+    background-color: blueviolet;
+    
+    border: solid royalblue 2px;
+    overflow: hidden;
+    
+}
+
+.sideBar>a{
+    align-self: center;
+    justify-self: start;
+    font-family: "alien_moonregular";
+    color: lightgray;
+    font-size: 1.2rem;
+    text-shadow:
+    2px 2px 0 rgb(150, 150, 161), 
+    -2px 2px 0 rgb(45, 45, 202), 
+    2px -2px 0 rgb(116, 116, 121), 
+    -2px -2px 0 rgb(47, 0, 255); 
+}
+
+#sideBarTitle{
+    justify-self: center;
+    align-self: center;
+}
+
+.footer{
+    
+    display: flex;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/-1;
+    border: solid 2px green;
+    
+
+}
+
+.header{
+    grid-column: 2/-1;
+    display: grid;
+    grid-template-rows: 130px;
+    color: antiquewhite;
+}
+
+.icon{
+    align-self: center;
+}
+.mainIcon{
+    align-self: baseline;
+    justify-self: center;
+    padding-left: 10px;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+#communities, #communitiesIcon{
+    align-self:start;
+    
+}
+
+.content{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 2/3;
+    
+}
+
+#sideBarTitle{
+    padding-left: 100px;
+    font-family: "alien_warsregular";
+    color: rgb(253, 248, 248);
+    font-size: 2rem;
+    text-shadow:
+  2px 2px 0 rgb(13, 13, 190), 
+  -2px 2px 0 rgb(31, 31, 182), 
+  2px -2px 0 rgb(48, 39, 177), 
+  -2px -2px 0 rgb(52, 18, 207); 
+}
