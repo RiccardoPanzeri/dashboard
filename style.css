@@ -66,13 +66,13 @@ body{
 
 .mainContainer{
     display: grid;
-    grid-template-columns: max(300px, 20vw) 3fr;
+    grid-template-columns: 20% 80%;
     
     height: 100%;
     
     min-height: 100vh;
     
-    grid-template-columns: 30% 70%;
+    
     grid-template-rows: 1fr 3fr;
     height: 100%;
     width: 100vw;
@@ -92,10 +92,11 @@ body{
     column-gap: 10px;
     align-items: center;
     background-color: blueviolet;
-    min-width: 230px;
+    min-width: 250px;
     border-right-style: groove ;
     border-right-color: rgba(0, 0, 0, 0.671);
     overflow: hidden;
+    z-index: 2;
     
 }
 
@@ -119,9 +120,11 @@ body{
 
 .rightContainer{
     display: grid;
-    grid-template-rows: 1fr 3fr 0.3fr;
+    grid-template-rows: 1fr 3fr 0.2fr;
     grid-row: 1/4;
     grid-column: 2/-1;
+    
+    
 }
 
 
@@ -142,13 +145,13 @@ body{
     grid-row: 1;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.6fr 0.5fr 1fr;
     color: antiquewhite;
     background-color: rgb(235, 201, 10);
     align-items: center;
     justify-items: center;
-    column-gap: 10px;
-    
+    column-gap: 30px;
+    min-width: 700px;
    
 }
 
@@ -166,7 +169,7 @@ body{
 .searchDiv{
     display: grid;
     justify-self: stretch;
-    grid-column: 1;
+    grid-column: 1/3;
     grid-template-columns: 20px 90%;
     
     gap: 20px;
@@ -178,18 +181,19 @@ body{
 
 .greetingDiv{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 0.5fr 3fr;
     grid-template-rows: 1fr 1fr;
-    gap:10px;
+    gap: 10px;
    justify-self: start;
    padding-left: 50px;
+   min-width: 400px;
 }
 .greetingProfilePic{
     grid-row: 1/4;
     border-radius: 100%;
 }
 
-.greetingFirstRow{
+.greetingFirstRow, .greetingSecondRow{
     font-family: "alien_warsregular", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 0.8rem;
     color: black;
@@ -199,6 +203,17 @@ body{
     2px -2px 0 rgb(250, 250, 255), 
     -2px -2px 0 rgb(203, 203, 206); 
 
+}
+
+.greetingFirstRow{
+    align-self: center;
+    justify-self: start;
+}
+
+.greetingSecondRow{
+    font-size: 1.4rem;
+    justify-self: start;
+    line-height: 0.5;
 }
 
 .icon{
@@ -225,7 +240,7 @@ a{
 .content{
     display: grid;
     grid-template-rows: 1fr 1fr;
-    max-width: 100%;
+   
     background-color: rgba(0, 0, 0, 0.938);
     
 }
@@ -271,27 +286,22 @@ a{
     
 }
 
-.greetingDiv{
+.buttonDiv{
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr;
-    gap:10px;
-   justify-self: start;
-   padding-left: 50px;
-}
-.greetingProfilePic{
-    grid-row: 1/4;
-    border-radius: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    align-items: center;
+    grid-column: 2/-1;
+    
 }
 
-.greetingFirstRow{
-    font-family: "alien_warsregular", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 0.8rem;
-    color: black;
-    text-shadow:
-    2px 2px 0 rgb(249, 249, 252), 
-    -2px 2px 0 rgb(252, 252, 255), 
-    2px -2px 0 rgb(250, 250, 255), 
-    -2px -2px 0 rgb(203, 203, 206); 
+
+header .button{
+    justify-self: left;
+    width: 100px;
+     height:50px;
+     background-color: blueviolet;
+     border: double black 10px;
+     border-radius: 25px;
 
 }
