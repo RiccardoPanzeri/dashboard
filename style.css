@@ -131,12 +131,14 @@ body{
 .footer{
     
     display: flex;
-    background-color: var(--gold);
+    background-color: black;
     justify-content: center;
     align-items: center;
-    
+    font-family: "alien_warsregular", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border-top-style: groove;
-    border-top-color: rgba(0, 0, 0, 0.671);;
+    border-top-color: rgba(65, 64, 64, 0.671);
+    font-size: 1rem;
+    color:whitesmoke;
 
 }
 
@@ -162,7 +164,7 @@ body{
     height: 25px;
     width: 90%;
     min-width: 150px;
-    
+    border: blueviolet solid 3px ;
     
 }
 
@@ -296,12 +298,63 @@ a{
 }
 
 
-header .button{
+.header .button{
     justify-self: left;
     width: 100px;
      height:50px;
      background-color: blueviolet;
      border: double black 10px;
-     border-radius: 25px;
+     border-radius: 50px;
 
+}
+
+.header #new:hover{
+    background-color: fuchsia;
+    border-color: white;
+}
+
+.header #upload:hover{
+    background-color: rgb(0, 174, 255);
+    border-color: white;
+}
+
+.header #share:hover{
+    background-color: rgb(30, 255, 0);
+    border-color: white;
+}
+
+.search:hover{
+    border-color: fuchsia;
+}
+
+.sideBar a:hover{
+    color: gold;
+    font-size: 1.2rem;
+    text-shadow:
+    2px 2px 0 rgb(245, 4, 245), 
+    -2px 2px 0 rgb(245, 4, 245), 
+    2px -2px 0 rgb(245, 4, 245), 
+    -2px -2px 0 rgb(245, 4, 245); 
+    
+}
+
+#sideBarTitle:hover{
+
+    color: gold;
+    font-size: 2.1rem;
+    text-shadow:
+    2px 2px 0 rgb(249, 249, 252), 
+    -2px 2px 0 rgb(252, 252, 255), 
+    2px -2px 0 rgb(250, 250, 255), 
+    -2px -2px 0 rgb(203, 203, 206); 
+}
+
+.usernameDiv p:hover{
+    font-size: 1.25rem;
+    color: fuchsia;
+    text-shadow:
+    2px 2px 0 rgb(249, 249, 252), 
+    -2px 2px 0 rgb(252, 252, 255), 
+    2px -2px 0 rgb(250, 250, 255), 
+    -2px -2px 0 rgb(203, 203, 206);
 }
